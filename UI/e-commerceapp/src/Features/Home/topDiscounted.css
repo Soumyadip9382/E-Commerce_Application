@@ -1,0 +1,100 @@
+.top-section {
+  width: 100%;
+  background: #fff;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.section-title {
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* container */
+.slider-container {
+  position: relative;
+}
+
+/* horizontal scroll */
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+  padding: 10px 40px;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* card */
+.deal-card {
+  min-width: 200px;
+  height: 260px;   /* ✅ fixed height */
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.deal-card:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.deal-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+}
+
+.deal-card h4 {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* price */
+.price {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.discounted {
+  font-weight: bold;
+  color: #000;
+}
+
+.base {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 12px;
+}
+
+.off {
+  color: green;
+  font-size: 12px;
+}
+
+/* nav buttons */
+.nav-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.left {
+  left: 5px;
+}
+
+.right {
+  right: 5px;
+}

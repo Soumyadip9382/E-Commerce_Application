@@ -1,0 +1,16 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+}
+
+.navbar span {
+  cursor: pointer;
+}
+
+.navbar span:hover {
+  color: #2874f0;
+}
