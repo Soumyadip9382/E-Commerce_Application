@@ -9,21 +9,6 @@ namespace E_CommerceApp.Helper
     {
         public static class SkuGenerator 
         {
-            //public static string GenerateSKU(
-            //    CreateProductDTO product,
-            //    ProductVariantDTO variant)
-            //{
-            //    string categoryCode = GetLastCategoryCode(product.CategoryPath);
-            //    string brandCode = GetCode(product.Brand, 3);
-            //    string productCode = GenerateProductCode(product.ProductName);
-
-            //    string colorCode = $"C{GetCode(variant.Color, 3)}";
-            //    string sizeCode = $"S{NormalizeSize(variant.Size)}";
-
-            //    return $"{categoryCode}-{brandCode}-{productCode}-{colorCode}-{sizeCode}";
-            //}
-
-            // 🔹 Extract last category from path
             private static string GetLastCategoryCode(string categoryPath)
             {
                 var last = categoryPath
